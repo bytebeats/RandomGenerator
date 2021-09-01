@@ -1,0 +1,3 @@
+rootProject.name = "RandomGenerator"
+include ':app'
+include ':library'
