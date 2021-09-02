@@ -1,9 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity">
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="#009933"
+            android:gravity="end|center_vertical"
+            android:text="Name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/name"
+            android:textColor="#009933"
+            android:gravity="start|center_vertical"
+            android:text="Jane Doe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="#009933"
+            android:gravity="end|center_vertical"
+            android:text="Mobile"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:textColor="#009933"
+            android:gravity="start|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="#009933"
+            android:gravity="end|center_vertical"
+            android:text="ID Card"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/id_card"
+            android:textColor="#009933"
+            android:gravity="start|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="#009933"
+            android:gravity="end|center_vertical"
+            android:text="Email"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/email"
+            android:textColor="#009933"
+            android:gravity="start|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="#009933"
+            android:gravity="end|center_vertical"
+            android:text="Bank Card"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/bank_card"
+            android:textColor="#009933"
+            android:gravity="start|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="#009933"
+            android:gravity="end|center_vertical"
+            android:text="Address"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/address"
+            android:textColor="#009933"
+            android:gravity="start|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generate"
+        android:text="Generate"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

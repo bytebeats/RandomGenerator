@@ -15,7 +15,7 @@ class EmailAddressGenerator : GenericGenerator() {
     override fun generate(): String {
         val prefix = alphaNumbericWithSizeBetween(5, 9)
         val part1 = alphaNumbericWithSizeBetween(1, 10)
-        val part2 = alphaNumbericWithSizeBetween(1, 3)
+        val part2 = alphaNumbericWithSizeBetween(2, 3)
         return "$prefix@${part1}.$part2"
     }
 
@@ -25,14 +25,10 @@ class EmailAddressGenerator : GenericGenerator() {
     }
 
     private fun alphaNumbericWithSize(size: Int): String {
-        val sb = StringBuilder()
-        for (i in 0 until size) {
-            sb.append(ALPHA_NUMBERIC[random.nextInt(ALPHA_NUMBERIC.length)])
-        }
-        return sb.toString()
+        return (0 until size).map { ALPHA_NUMBERIC.random() }.joinToString(separator = "")
     }
 
     companion object {
-        private const val ALPHA_NUMBERIC = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        private const val ALPHA_NUMBERIC = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     }
 }
