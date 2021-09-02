@@ -44,7 +44,7 @@ class ChineseCharHelper private constructor() {
     }
 
     fun oneRandomTraditionalChineseChar(): Char {
-        return TRADITIONAL_CHINESE_CHARS[random.nextInt(TRADITIONAL_CHINESE_CHARS.length)]
+        return TRADITIONAL_CHINESE_CHARS.random()
     }
 
     fun randomTraditionalChineseCharsWithSize(size: Int): String {
